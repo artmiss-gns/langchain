@@ -221,7 +221,7 @@ class ChatOpenRouter(BaseChatModel):
     """
 
     request_timeout: float | None = Field(default=None, alias="timeout")
-    """Timeout for requests in seconds. Converted to milliseconds for SDK `timeout_ms`."""
+    """Timeout for requests in seconds."""
 
     max_retries: int = 2
     """Maximum number of retries.
